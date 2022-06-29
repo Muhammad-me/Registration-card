@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+.writer{
+    width: 250px;
+    height: 50px;
+    backdrop-filter: blur(1px);
+    margin: 0 auto;
+    display: flex;
+    margin-top: 20px;
+}
+form{
+    position: relative;
+    background: blue;
+    width: 400px;
+    height: 450px;
+    padding-top: 50px;
+    display: inline-block;
+    justify-content: center;
+    border-radius: 30px;
+}
+.writer input{
+    height: 50px;
+    width: 300px;
+    background: white;
+    outline: none;
+    border-radius: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    padding-left: 7px;
+    font-size: 15px;
+}
+.writer label{
+    position: absolute;
+    width: 120px;
+    left: 15px;
+    top: 15px;
+    background: rgba(255, 255, 255, 0.543);
+    border-radius: 5px;
+    border: 1px solid white;
+    transition: 0.4s all;
+    font-size: 15px;
+    cursor: text;
+}
+.writer input:focus ~ label,
+.writer input:valid ~ label{
+    width: 100.4px;
+    height: auto;
+    font-size: 15px;
+    left: 10px;
+    top: -10px;
+    cursor: default;
+    background: white;
+}
+.writer input:focus{
+    border: 3px solid #d30000;
+    color: #d30000;
+}
+.writer input[minlength]:valid{
+    border: 3px solid green;
+    color: green;
+}
+.center{
+    width: 100%;
+    height: 100vh;
+    padding: 40px 100px;
+    margin: 0 auto;
+    padding-top: 150px;
+    background: black;
+    display: none;
+}
+.div_add{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adder{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background: rgb(254, 221, 87);
+    color: black;
+}
+.active{
+    display: inline-table;
+    font-size: 15px;
+}
+.adder1{
+    width: 150px;
+    height: 40px;
+    border-radius: 16px;
+    font-size: 15px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+}
+figcaption{
+    font-size: 30px;
+    line-height: 40px;
+    color: black;
+    width: 300px;
+    text-align: center;
+}
+input{
+    font-size: 15px;
+    font-style: italic;
+    display: flex;
+    margin: 0 auto;
+    outline: none;
+}
+h1{
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 800;
+}
+#btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    margin: 0 auto;
+}
+button{
+    cursor: pointer;
+}
+@media screen and (max-width: 800px){
+    .adder{
+        width: 150px;
+    }
+    .adder1{
+        width: 110px;
+        height: 30px;
+    }
+    form{
+        width: 300px;
+        height: 350px;
+        padding-top: 25px;
+    }
+    .writer{
+        width: 180px;
+        height: 35px;
+    }
+    #btn{
+        width: 80px;
+        height: 25px;
+    }
+}
+@media screen and (max-width: 500px){
+    .adder{
+        width: 120px;
+    }
+    .adder1{
+        width: 80px;
+        height: 25px;
+        font-size: 12px;
+    }
+    form{
+        width: 250px;
+        height: 300px;
+        padding-top: 20px;
+    }
+    .writer{
+        width: 120px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .writer input{
+        width: 120px;
+        height: 30px;
+    }
+    #btn{
+        width: 70px;
+        height: 25px;
+        font-size: 12px;
+    }
+    .center{
+        padding: 50px;
+        height: 400px;
+    }
+    .writer label {
+        position: absolute;
+        width: 80px;
+        left: 2px;
+        top: 5px;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 500px){
+    .adder{
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .adder1{
+        width: 70px;
+        height: 20px;
+        font-size: 10px;
+    }
+    form{
+        width: 180px;
+        height: 200px;
+        padding-top: 15px;
+    }
+    .writer{
+        width: 100px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .writer input{
+        width: 100px;
+        height: 25px;
+        font-size: 8px;
+    }
+    #btn{
+        width: 60px;
+        height: 20px;
+        font-size: 10px;
+        margin-top: 8px;
+    }
+    .center{
+        padding: 20px;
+        height: 220px;
+    }
+    .writer label {
+        position: absolute;
+        width: 60px;
+        left: 3px;
+        top: 4px;
+        font-size: 8px;
+    }
+    .div_add{
+        height: 500px;
+        width: 230px;
+    }
+}
