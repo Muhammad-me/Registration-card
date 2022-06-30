@@ -24,20 +24,23 @@ form{
     justify-content: center;
     border-radius: 30px;
 }
+form:hover{
+    background: rgba(139, 0, 0, 0.358);
+}
 .writer input{
     height: 50px;
     width: 300px;
     background: white;
     outline: none;
     border-radius: 10px;
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgba(0, 0, 0, 0.354);
     padding-left: 7px;
     font-size: 15px;
 }
 .writer label{
     position: absolute;
     width: 120px;
-    left: 15px;
+    left: 10px;
     top: 15px;
     background: rgba(255, 255, 255, 0.543);
     border-radius: 5px;
@@ -73,6 +76,12 @@ form{
     background: black;
     display: none;
 }
+.center:hover{
+    background: rgba(255, 217, 0, 0.564);
+}
+.center:active{
+    background: rgba(130, 85, 0, 0.507);
+}
 .div_add{
     height: 100vh;
     display: flex;
@@ -90,9 +99,33 @@ form{
     background: rgb(254, 221, 87);
     color: black;
 }
+.adder:hover{
+    background: rgb(115, 98, 0);
+    color: white;
+}
+.adder:active{
+    background: rgb(249, 235, 160);
+    color: rgb(255, 0, 0);
+}
+.adder1:hover{
+    background: white;
+    color: black;
+}
+.adder1:active{
+    background: rgb(249, 235, 160);
+    color: rgb(255, 0, 0);
+}
 .active{
     display: inline-table;
     font-size: 15px;
+}
+#btn:hover{
+    background: white;
+    color: black;
+}
+#btn:active{
+    background: rgba(68, 16, 16, 0.63);
+    color: yellow;
 }
 .adder1{
     width: 150px;
@@ -134,6 +167,9 @@ button{
     cursor: pointer;
 }
 @media screen and (max-width: 800px){
+    .writer label{
+        left: 4px;
+    }
     .div_add{
         height: 300px;
     }
@@ -199,7 +235,7 @@ button{
     .writer label {
         position: absolute;
         width: 80px;
-        left: 2px;
+        left: 3px;
         top: 5px;
         font-size: 10px;
     }
@@ -246,7 +282,6 @@ button{
     .writer label {
         position: absolute;
         width: 60px;
-        left: 3px;
         top: 4px;
         font-size: 8px;
     }
