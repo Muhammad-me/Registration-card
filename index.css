@@ -134,6 +134,9 @@ button{
     cursor: pointer;
 }
 @media screen and (max-width: 800px){
+    .div_add{
+        height: 300px;
+    }
     .adder{
         width: 150px;
     }
@@ -156,6 +159,10 @@ button{
     }
 }
 @media screen and (max-width: 500px){
+    .div_add{
+        width: 100vw;
+        height: 200px;
+    }
     .adder{
         width: 120px;
     }
@@ -197,7 +204,7 @@ button{
         font-size: 10px;
     }
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 300px){
     .adder{
         width: 80px;
         height: 30px;
@@ -244,7 +251,7 @@ button{
         font-size: 8px;
     }
     .div_add{
-        height: 500px;
-        width: 230px;
+        width: 100vw;
+        height: 200px;
     }
 }
